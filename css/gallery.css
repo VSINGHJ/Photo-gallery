@@ -1,0 +1,81 @@
+/* CSS */
+body {
+    font-family: "Audiowide", sans-serif;
+    background-image: linear-gradient(180deg, #51e2f5, #9df9ef , #edf756 , #ffa8b6 );
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: rebeccapurple;
+}
+
+#gallery {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#gallery figure {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    border-color: white;
+    border-radius: 10%;
+    border-width: 10px;
+    border-style: double;
+}
+
+#gallery figure img {
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+#gallery figure:hover img {
+    transform: scale(1.1);
+}
+
+#gallery ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+#gallery ul li {
+    flex-basis: 19%;
+    margin-bottom: 20px;
+    
+}
+
+#gallery ul li img {
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+    border-radius: 10%;
+    border-width: 10px;
+    border-style: inherit;
+}
+
+#gallery ul li:hover img {
+    transform: scale(1.1);
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #00a170;
+    color: white;
+    text-align: center;
+    text-decoration: solid;
+    font-size: 16px;
+    margin: 10px 0;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9b2335; 
+    color: white;
+}
